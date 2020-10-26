@@ -5,7 +5,6 @@ import { ThemeContext } from 'styled-components';
 import { useLazyQuery, gql } from '@apollo/client';
 import { FilterButton, FilterContainer, Loader } from './Chart.styles';
 import { IEnergyWeather } from '../types';
-import { withTheme } from 'styled-components';
 
 const CONSUMPTION_ANOMALY = gql`
 query GetConsumptionAndWeatherDataWithAnomalies($fromDate: String, $toDate: String) {
@@ -43,7 +42,7 @@ const Chart = () => {
     const options = {
         chart: {
             type: 'spline',
-            backgroundColor: withTheme,
+            backgroundColor: themeContext.primary
         },
         title: {
             text: CHART_LABELS.EnergyConsumption,
