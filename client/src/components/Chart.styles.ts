@@ -35,3 +35,7 @@ export const Loader = styled.div`
     width: 100%;
     color:${props => props.theme.secondary};
 `
+
+export const Container = styled.div`
+    height: 400px
+`

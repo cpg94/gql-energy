@@ -8,7 +8,7 @@ import {
 const Nav = () => (
     <Container>
         <Logo>
-            notHark.
+            SHark.
         </Logo>
         <Description>
             Energy Consumption Data: 7th Jan 2020
